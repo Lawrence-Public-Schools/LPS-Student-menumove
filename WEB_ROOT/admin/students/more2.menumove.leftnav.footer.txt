@@ -1,0 +1,69 @@
+<script type="text/javascript">
+$j(document).ready(function() {
+    var in1 = $j("ul#std_information > li > a[href^='contacts.html?frn='").parent();
+    var in2 = $j("ul#std_information > li > a[href^='fmly_Index.html?frn='").parent();
+    var in3 = $j("ul#std_information > li > a[href^='emailconfig.html?frn='").parent();
+
+    var ac1 = $j("ul#std_academics > li > a[href^='careertech/careertech.html?frn='").parent();
+    var ac2 = $j("ul#std_academics > li > a[href^='cumulative.html?frn='").parent();
+    var ac3 = $j("ul#std_academics > li > a[href^='GraduationPlanner/GradPlanProgress.html?frn='").parent();
+    var ac4 = $j("ul#std_academics > li > a[href^='GraduationPlanner/GradPlanSelect.html?frn='").parent();
+    var ac5 = $j("ul#std_academics > li > a[href^='graduationcheck.html?frn='").parent();
+    var ac6 = $j("ul#std_academics > li > a[href^='honorroll.html?frn='").parent();
+    var ac7 = $j("ul#std_academics > li > a[href^='testlist.html?frn='").parent();
+    var ac8 = $j("ul#std_academics > li > a[href^='student_tests_scores_summary.html?frn='").parent();
+    var ac9 = $j("ul#std_academics > li > a[href^='truancieslist.html?frn='").parent();
+
+    var ad1 = $j("ul#std_administration > li > a[href^='district/home.html?frn='").parent();
+    var ad2 = $j("ul#std_administration > li > a[href^='fees.html?frn='").parent();
+    var ad3 = $j("ul#std_administration > li > a[href^='lunch.html?frn='").parent();
+    var ad4 = $j("ul#std_administration > li > a[href^='transactions.html?frn='").parent();
+    var ad5 = $j("ul#std_administration > li > a[href^='/admin/seop/home.html?frn='").parent();
+
+    $j("div#nav-main-frame > ul:last").after('<h3>Information - Other</h3><ul id="ext_information"></ul>');
+    
+    $j("ul#ext_information").append(in1);
+    $j("ul#ext_information").append(in2);
+    $j("ul#ext_information").append(in3);
+
+    $j("ul#std_information > li > a[href^='contacts.html?frn='").parent().remove();
+    $j("ul#std_information > li > a[href^='fmly_Index.html?frn='").parent().remove();
+    $j("ul#std_information > li > a[href^='emailconfig.html?frn='").parent().remove();
+
+    $j("div#nav-main-frame > ul:last").after('<h3>Academics - Other </h3><ul id="ext_academics"></ul>');
+
+    $j("ul#ext_academics").append(ac1);
+    $j("ul#ext_academics").append(ac2);
+    $j("ul#ext_academics").append(ac3);
+    $j("ul#ext_academics").append(ac4);
+    $j("ul#ext_academics").append(ac5);
+    $j("ul#ext_academics").append(ac6);
+    $j("ul#ext_academics").append(ac7);
+    $j("ul#ext_academics").append(ac8);
+    $j("ul#ext_academics").append(ac9);
+
+    $j("ul#std_academics > li > a[href^='careertech/careertech.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='cumulative.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='GraduationPlanner/GradPlanProgress.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='GraduationPlanner/GradPlanSelect.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='graduationcheck.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='honorroll.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='testlist.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='student_tests_scores_summary.html?frn='").parent().remove();
+    $j("ul#std_academics > li > a[href^='truancieslist.html?frn='").parent().remove();
+
+    $j("div#nav-main-frame > ul:last").after('<h3>Administration - Other </h3><ul id="ext_administration"></ul>');  
+
+    $j("ul#ext_administration").append(ad1);
+    $j("ul#ext_administration").append(ad2);
+    $j("ul#ext_administration").append(ad3);
+    $j("ul#ext_administration").append(ad4);
+    $j("ul#ext_administration").append(ad5);
+
+    $j("ul#std_administration > li > a[href^='district/home.html?frn='").parent().remove();
+    $j("ul#std_administration > li > a[href^='fees.html?frn='").parent().remove();
+    $j("ul#std_administration > li > a[href^='lunch.html?frn='").parent().remove();
+    $j("ul#std_administration > li > a[href^='transactions.html?frn='").parent().remove();
+    $j("ul#std_administration > li > a[href^='/admin/seop/home.html?frn='").parent().remove();
+});
+</script>
